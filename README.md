@@ -243,8 +243,13 @@ We welcome contributions to NovaSentinel! See CONTRIBUTING.md for guidelines on 
 Contacts
 
 Author: Earnest Riivitse (EarnestAxis5546)
+
 Email: wolkapoika@gmail.com
+
+
 X: earnestaxis5546
+
+
 Issues: GitHub Issues
 
 
