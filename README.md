@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=30&duration=1000&pause=50&color=FF2D55&center=true&vCenter=true&width=700&lines=NovaSentinel+-+Anti-DDoS+Fortress;Built+for+Space+Station+14;Powered+by+C%23+and+Arch+Linux" alt="Typing SVG">
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=30&duration=1000&pause=50&color=FF2D55&center=true&vCenter=true&width=700&lines=NovaSentinel+-+Anti-DDoS+Fortress;Built+for+Servers;Powered+by+C%23+and+Arch+Linux" alt="Typing SVG">
 </p>
 
-<h1 align="center">🛡️ NovaSentinel: Multi-Layer Anti-DDoS System 🛡️</h1>
+<h1 align="center"> NovaSentinel: Multi-Layer Anti-DDoS System </h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active%20Development-FF2D55?style=plastic&logo=shield" alt="Active Development">
@@ -11,9 +11,6 @@
   <img src="https://img.shields.io/badge/%F0%9F%9B%A0%EF%B8%8F-Security+Fortified-FF2D55?style=plastic&labelColor=1A1A1A" alt="Security Fortified">
 </p>
 
-<p align="center">
-  <img src="https://lottie.host/2f7b3c8e-4d2f-4e7a-9f8d-3c2e5b6a9c3e/8e5b6a9c.json" alt="Shield Animation" width="200" />
-</p>
 
 ## For Managers
 
