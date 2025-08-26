@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  novasentinel:
+    image: earnestaxis5546/novasentinel:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config/envoy.yaml:/etc/envoy/envoy.yaml
+      - ./config/redis.conf:/etc/redis/redis.conf
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+  redis:
+    image: redis:7.0
+    volumes:
+      - ./config/redis.conf:/etc/redis/redis.conf
+    ports:
+      - "6379:6379"
+  envoy:
+    image: envoyproxy/envoy:v1.31-latest
+    volumes:
+      - ./config/envoy.yaml:/etc/envoy/envoy.yaml
+    ports:
+      - "10000:10000"

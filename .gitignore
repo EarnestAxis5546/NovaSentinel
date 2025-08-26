@@ -1,0 +1,27 @@
+# .NET Core
+bin/
+obj/
+*.user
+*.suo
+*.csproj.user
+
+# Logs
+logs/
+*.log
+
+# Docker
+*.dockerignore
+*.env
+
+# eBPF
+ebpf/*.o
+ebpf/*.so
+
+# IDE
+.vscode/
+.idea/
+
+# Miscellaneous
+*.swp
+*.bak
+*.tmp
