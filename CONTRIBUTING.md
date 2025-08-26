@@ -22,3 +22,66 @@ Thank you for joining the **NovaSentinel** community, a multi-layer Anti-DDoS sy
   **Logs**: [Paste relevant logs]
   **Expected Behavior**: [What should happen]
   **Actual Behavior**: [What happens]
+
+Submitting Pull Requests (PRs)
+
+Fork the Repository:git clone https://github.com/<your-username>/NovaSentinel.git
+cd NovaSentinel
+
+
+Create a Branch:git checkout -b feature/your-feature-name
+
+
+Make Changes:
+Adhere to the C# coding style below.
+Update tests in tests/ if applicable.
+
+
+Test Locally:dotnet test tests/NovaSentinel.Tests
+
+
+Commit Changes:
+Use clear commit messages (e.g., "Add eBPF filter for UDP floods").
+Sign off commits: git commit -s -m "Your message".
+
+
+Push and Create PR:git push origin feature/your-feature-name
+
+
+Open a PR on GitHub.
+Reference related issues (e.g., "Fixes #123").
+
+
+Review Process:
+Address feedback promptly.
+Ensure CI tests pass.
+
+
+
+Coding Style (C#)
+
+Formatting: Use .NET Core conventions (dotnet format).
+Naming:
+PascalCase for classes, methods, properties (e.g., DDoSProtectionMiddleware).
+camelCase for local variables (e.g., requestCount).
+
+
+Comments: Use XML comments for public methods:/// <summary>
+/// Blocks an IP address for exceeding rate limits.
+/// </summary>
+/// <param name="ip">The IP to block.</param>
+public void BlockIp(string ip) { ... }
+
+
+Structure: Follow single-responsibility principle, use dependency injection.
+Linting: Run dotnet format before committing.
+
+Getting Help
+
+Issues: Post on GitHub Issues.
+Contact: Email wolkapoika@gmail.com or message on X.
+
+
+  Let’s build a stronger, safer NovaSentinel together!
+
+```
