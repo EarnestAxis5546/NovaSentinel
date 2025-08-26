@@ -265,4 +265,4 @@ Issues: GitHub Issues
 ```
   "Defend with code, thrive with resilience." – Earnest Riivitse
 
-https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=footer&text=NovaSentinel&fontSize=20&fontColor=FFFFFF&animation=scaleIn
+
