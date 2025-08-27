@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Contribute-to+NovaSentinel-FF2D55?style=plastic&logo=git" alt="Contribute to NovaSentinel">
+  <img src="https://img.shields.io/badge/Contribute-to+NovaSentinel-FF3D7F?style=plastic&logo=git" alt="Contribute to NovaSentinel">
 </p>
 
 # Contributing to NovaSentinel
 
-Thank you for joining the **NovaSentinel** community, a multi-layer Anti-DDoS system for Space Station 14 and beyond! Your contributions help strengthen our defenses. This guide outlines how to collaborate effectively.
+Thank you for joining the **NovaSentinel** community, a multi-layer Anti-DDoS system for Space Station 14 and beyond! Your contributions help fortify our defenses. This guide outlines how to collaborate effectively.
 
 ## How to Contribute
 
 ### Reporting Issues
 - **Check Existing Issues**: Review [GitHub Issues](https://github.com/earnestaxis5546/NovaSentinel/issues) to avoid duplicates.
 - **Submit an Issue**:
-  - Use a descriptive title (e.g., "Envoy L7 filter fails for HTTP/2 traffic").
-  - Include steps to reproduce, environment details (e.g., Arch Linux, .NET 8.0), and logs.
+  - Use a clear title (e.g., "Redis rate-limiting fails under UDP flood").
+  - Include steps to reproduce, environment (e.g., Arch Linux, .NET 8.0), and logs.
   - Suggest fixes if possible.
 - **Template**:
   ```markdown
@@ -33,15 +33,15 @@ Create a Branch:git checkout -b feature/your-feature-name
 
 
 Make Changes:
-Adhere to the C# coding style below.
-Update tests in tests/ if applicable.
+Follow the C# coding style below.
+Update tests in src/NovaSentinel.Tests/.
 
 
-Test Locally:dotnet test tests/NovaSentinel.Tests
+Test Locally:dotnet test src/NovaSentinel.Tests
 
 
 Commit Changes:
-Use clear commit messages (e.g., "Add eBPF filter for UDP floods").
+Use clear commit messages (e.g., "Add eBPF filter for TCP floods").
 Sign off commits: git commit -s -m "Your message".
 
 
@@ -82,6 +82,8 @@ Issues: Post on GitHub Issues.
 Contact: Email wolkapoika@gmail.com or message on X.
 
 
-  Let’s build a stronger, safer NovaSentinel together!
+  
 
-```
+
+
+  Let’s build a stronger, safer NovaSentinel together!
