@@ -25,7 +25,7 @@ Thank you for joining the **NovaSentinel** community, a multi-layer Anti-DDoS sy
 
 Submitting Pull Requests (PRs)
 
-Fork the Repository:git clone https://github.com/<your-username>/NovaSentinel.git
+Fork the Repository:git clone https://github.com/EarnestAxis5546/NovaSentinel.git
 cd NovaSentinel
 
 
