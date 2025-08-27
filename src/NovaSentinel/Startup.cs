@@ -9,9 +9,15 @@ namespace NovaSentinel
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers(options => options.AllowEmptyInputInBodyModelBinding = true);
             services.AddSingleton<RedisClient>();
             services.AddSingleton<DDoSService>();
+            // Optimize for high concurrency
+            services.Configure<KestrelServerOptions>(options =>
+            {
+                options.Limits.MaxConcurrentConnections = 35000;
+                options.Limits.MaxRequestBodySize = null;
+            });
         }
 
         public void Configure(IApplicationBuilder app)

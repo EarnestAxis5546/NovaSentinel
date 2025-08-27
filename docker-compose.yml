@@ -10,19 +10,37 @@ services:
     volumes:
       - ./config/envoy.yaml:/etc/envoy/envoy.yaml
       - ./config/redis.conf:/etc/redis/redis.conf
+      - ./lua/:/app/lua/
     environment:
       - REDIS_HOST=redis
+      - ASPNETCORE_ENVIRONMENT=Production
     depends_on:
       - redis
+      - envoy
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
   redis:
     image: redis:7.0
     volumes:
       - ./config/redis.conf:/etc/redis/redis.conf
     ports:
       - "6379:6379"
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
   envoy:
     image: envoyproxy/envoy:v1.31-latest
     volumes:
       - ./config/envoy.yaml:/etc/envoy/envoy.yaml
     ports:
       - "10000:10000"
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
